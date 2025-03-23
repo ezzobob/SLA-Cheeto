@@ -20,7 +20,6 @@ void Gui::Render()
         }
         ImGui::EndGroup();
 
-		GuiUtil::RainbowLine();
 		ImGui::PushStyleColor(ImGuiCol_ChildBg, IM_COL32(0, 0, 0, 0));
 		ImGui::BeginChild(xorstr("##LeftSide"), ImVec2(100, GuiUtil::GetY()), TRUE);
 		ImGui::PopStyleColor();
