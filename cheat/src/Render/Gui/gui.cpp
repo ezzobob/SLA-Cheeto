@@ -69,7 +69,7 @@ void Gui::Render()
 
 			ImGui::CheckboxFill(xorstr("Damage Hack"), &vars.DamageHack.value());
 			if (vars.DamageHack.value())
-				ImGui::SliderInt(xorstr("Value"), &vars.DamageHackValue.value(), 10000, 100000000, "%d");
+				ImGui::SliderInt(xorstr("Value"), &vars.DamageHackValue.value(), 1000, 100000, "%d");
 
 			ImGui::CheckboxFill(xorstr("Dumb Enemies"), &vars.DumbEnemies.value()); HELPMAKER(xorstr("This will prevent enemies from attacking or moving towards you"));
 
